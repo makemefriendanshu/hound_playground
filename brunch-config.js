@@ -54,6 +54,9 @@ exports.config = {
     babel: {
       // Do not use ES6 compiler in vendor code
       ignore: [/web\/static\/vendor/]
+    },
+    copycat: {
+      "fonts": ["node_modules/font-awesome/fonts"]
     }
   },
 
@@ -64,6 +67,9 @@ exports.config = {
   },
 
   npm: {
-    enabled: true
+    enabled: true,
+    styles: {
+      "font-awesome": ["css/font-awesome.min.css"]
+    }
   }
 };
