@@ -18,6 +18,10 @@ defmodule HoundPlayground.Router do
 
     get "/", PageController, :index
     get "/login", LoginController, :index
+    post "/login", LoginController, :login
+
+    get "/secure", SecureController, :index
+    get "/logout", SecureController, :logout
   end
 
   # Other scopes may use custom stacks.
