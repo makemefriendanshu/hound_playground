@@ -22,6 +22,7 @@ defmodule HoundPlayground.Router do
 
     get "/secure", SecureController, :index
     get "/logout", SecureController, :logout
+    get "/chat", ChatController, :index
   end
 
   # Other scopes may use custom stacks.
