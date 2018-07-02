@@ -4,6 +4,7 @@
 # This configuration file is loaded before any dependency and
 # is restricted to this project.
 use Mix.Config
+config :hound, driver: "phantomjs"
 
 # Configures the endpoint
 config :hound_playground, HoundPlayground.Endpoint,
